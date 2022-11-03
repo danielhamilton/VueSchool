@@ -1,0 +1,45 @@
+data = {
+	categories: [
+		{
+			id: 'c1',
+			name: 'Design',
+			forums: ['f1']
+		}
+	],
+	forums: [
+		{
+			id: 'f1',
+			name: 'Toy Design',
+			description: 'Chat about toy design with other designers.',
+			categoryId: 'c1',
+			threads: ['t1']
+		}
+	],
+	users: [
+		{
+			id:'u1',
+			name: 'Sam'
+		}
+	],
+	threads: [
+		{
+			id: 't1',
+			title: 'What is your favorite food?',
+			publishedAt: 1294810493,
+			posts: [],
+			userId:'u1'
+		}
+	],
+	posts: [
+		{
+			id: 'p1',
+			publishedAt: 1294810493,
+			userId: 'u1',
+			text: 'I like cheese pizza, and you?',
+			threadId: 't1'
+		}
+	]
+}
+
+
+data.posts.filter(post => post.userId === 'u1')

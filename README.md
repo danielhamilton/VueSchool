@@ -13,6 +13,6 @@ Repo for VueSchool classes
 
 **Vue 3 Masterclass Coursework**
 
-📄: Vue router coursework, create a travel app
+📄: Vue masterclass coursework, multiple projects
 
 🗂: vueschool-forum

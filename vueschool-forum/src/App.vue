@@ -1,6 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <div class="container">
   <page-home />
+  </div>
 </template>
 
 <script>
@@ -19,9 +21,10 @@ export default {
   font-family: Inter, Helvetica-Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: left;
+  text-align: center;
   color: #2c3e50;
-  width: 50%;
   margin: 0 auto;
+  width: 50%;
+  margin-top: 60px;
 }
 </style>

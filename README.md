@@ -2,7 +2,7 @@
 Repo for VueSchool classes
 --
 
-**Vue Router for Everyone**
+🔗 **Vue Router for Everyone**
 
 📄: Vue router coursework, create a travel app
 
@@ -11,7 +11,7 @@ Repo for VueSchool classes
 --
 
 
-**Vue 3 Masterclass Coursework**
+👑 **Vue 3 Masterclass Coursework**
 
 📄: Vue masterclass coursework, multiple projects
 

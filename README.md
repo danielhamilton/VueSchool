@@ -1,5 +1,5 @@
 # VueSchool
-Repo for my VueSchool classes
+Repo for VueSchool classes
 --
 
 **Vue Router for Everyone**

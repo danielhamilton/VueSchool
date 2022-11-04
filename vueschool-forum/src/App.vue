@@ -17,14 +17,6 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Inter, Helvetica-Neue, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin: 0 auto;
-  width: 50%;
-  margin-top: 60px;
-}
+@import "assets/styles.css";
+
 </style>

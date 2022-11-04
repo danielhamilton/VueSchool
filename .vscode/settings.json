@@ -1,6 +1,0 @@
-{
-  "editor.fontFamily": "IBM Plex Mono, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
-  "files.autoSave": "afterDelay",
-  "workbench.commandPalette.history": 75,
-  "workbench.hover.delay": 750
-}

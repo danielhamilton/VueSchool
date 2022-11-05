@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
 const routes = [
@@ -6,11 +6,13 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+    props: true,
   },
 
   {
-    path: "/details/:id",
+    path: "/details/:slug",
     name: "DestinationDetails",
+    props: true,
     component: () =>
       import(
         /* webpackChunkName: "brazil" */ "../views/DestinationDetails.vue"
@@ -19,7 +21,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 

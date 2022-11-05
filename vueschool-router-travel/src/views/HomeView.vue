@@ -7,7 +7,7 @@
         <router-link
           :to="{
             name: 'DestinationDetails',
-            params: { id: destination.id },
+            params: { slug: destination.slug },
           }"
         >
           <h2>{{ destination.name }}</h2>
@@ -16,7 +16,7 @@
           <router-link
             :to="{
               name: 'DestinationDetails',
-              params: { id: destination.id },
+              params: { slug: destination.slug },
             }"
           >
             <img
@@ -56,5 +56,13 @@ img {
 .destinations {
   display: flex;
   justify-content: space-between;
+}
+a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+a:hover,
+a:visited {
+  text-decoration: underline;
 }
 </style>

@@ -1,34 +1,36 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/brazil">Brazil</router-link> |
-    <router-link to="/jamaica">Jamaica</router-link> |
-    <router-link to="/panama">Panama</router-link> |
-    <router-link to="/hawaii">Hawaii</router-link>
-  </nav>
-  <router-view />
+  <div id="app">
+    <TheNavigation />
+    <router-view />
+  </div>
 </template>
 
+<script>
+import TheNavigation from "./components/TheNavigation.vue";
+
+export default {
+  components: {
+    TheNavigation,
+  },
+};
+</script>
+
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&display=swap");
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+h1 {
+  font-weight: 900;
+  font-size: 6rem;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-  padding: 0 10px;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+h2 {
+  font-weight: 900;
 }
 </style>

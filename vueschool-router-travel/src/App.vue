@@ -22,22 +22,26 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap");
 
 #app {
   font-family: "Inter", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   color: #2c3e50;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
-  font-weight: 900;
-  font-size: 6rem;
+  font-family: "Cherry Swash", cursive;
+  font-weight: 400;
+  font-size: 10rem;
   text-align: center;
 }
 h2 {
-  font-weight: 900;
+  font-family: "Cherry Swash", cursive;
+  font-weight: 400;
   text-align: center;
 }
 .slide-enter-active,

@@ -7,8 +7,8 @@
       <p>{{ destination.description }}</p>
     </div>
     <section class="experiences">
-      <h1>Top Experiences in {{ destination.name }}</h1>
-      <div class="cards">
+      <h2>Top Experiences in {{ destination.name }}</h2>
+      <div class="cards" id="experience">
         <div
           v-for="experience in destination.experiences"
           :key="experience.slug"
@@ -18,6 +18,7 @@
             :to="{
               name: 'experienceDetails',
               params: { experienceSlug: experience.slug },
+              hash: '#experience',
             }"
           >
             <img
@@ -61,9 +62,25 @@ export default {
 </script>
 
 <style scoped>
+img {
+  max-width: 600px;
+  height: auto;
+  width: 100%;
+  max-height: 400px;
+}
+.experiences {
+  border: 1px solid rgb(92, 32, 188);
+  padding: 16px 24px;
+  margin-top: 16px;
+}
 .destination-details {
   display: flex;
   justify-content: space-between;
+}
+p {
+  margin: 40px;
+  font-size: 1.25remx;
+  text-align: left;
 }
 
 .cards {
@@ -76,19 +93,13 @@ export default {
   text-align: center;
 }
 
-p {
-  margin: 0 40px;
-  font-size: 20px;
-  text-align: left;
-}
-
 .cards img {
   max-height: 200px;
+  border-radius: 8px;
 }
 .card {
-  padding: 0 20px;
+  padding: 16px 16px;
   position: relative;
-  border-radius: 8px;
 }
 .card__text {
   position: absolute;
@@ -96,7 +107,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 900;
   text-decoration: none;
 }

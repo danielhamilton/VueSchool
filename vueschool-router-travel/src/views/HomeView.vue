@@ -46,12 +46,11 @@ export default {
 
 <style scoped>
 .home {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 img {
   max-width: 200px;
-  border-radius: 8px;
 }
 .destinations {
   display: flex;

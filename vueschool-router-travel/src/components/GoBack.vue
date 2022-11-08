@@ -16,5 +16,7 @@ export default {
 <style>
 button {
   border: 0;
+  height: 24px;
+  font-size: 16px;
 }
 </style>

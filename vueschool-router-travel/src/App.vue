@@ -69,4 +69,16 @@ h2 {
   opacity: 1;
   transform: translateY(0);
 }
+
+.input {
+  border: 1px solid green;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
 </style>

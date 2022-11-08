@@ -19,6 +19,9 @@
           {{ destination.name }}
         </router-link>
       </li>
+      <li class="links">
+        <router-link to="/user">Login</router-link>
+      </li>
     </ul>
   </nav>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>Experiences</h1>
-    <h2>{{ experience.name }}</h2>
+    <h1>{{ experience.name }}</h1>
     <div class="experience-details">
       <img
         :src="require(`@/assets/${experience.image}`)"
@@ -46,6 +46,7 @@ img {
   height: auto;
   width: 100%;
   max-height: 400px;
+  border-radius: 8px;
 }
 .experience-details {
   display: flex;

@@ -1,12 +1,13 @@
 <template>
   <div>
+    <GoBack />
     <h1>{{ destination.name }}</h1>
     <div class="destination-details">
       <img :src="require(`@/assets/${destination.image}`)" />
       <p>{{ destination.description }}</p>
     </div>
     <section class="experiences">
-      <h2>Top Experiences in {{ destination.name }}</h2>
+      <h1>Top Experiences in {{ destination.name }}</h1>
       <div class="cards">
         <div
           v-for="experience in destination.experiences"
@@ -35,7 +36,11 @@
 
 <script>
 import store from "@/store";
+import GoBack from "@/components/GoBack";
 export default {
+  components: {
+    GoBack,
+  },
   data() {
     return {};
   },
@@ -68,7 +73,7 @@ export default {
   height: auto;
   width: 100%;
   max-height: 400px;
-  border-radius: 8px;
+  text-align: center;
 }
 
 p {
@@ -83,6 +88,7 @@ p {
 .card {
   padding: 0 20px;
   position: relative;
+  border-radius: 8px;
 }
 .card__text {
   position: absolute;

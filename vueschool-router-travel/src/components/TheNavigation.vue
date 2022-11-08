@@ -35,8 +35,15 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap");
+
 #nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 40px;
+  font-family: "Cherry Swash", cursive;
+  font-weight: 700;
 }
 #nav a {
   font-weight: bold;
@@ -50,7 +57,7 @@ export default {
   display: flex;
 }
 .links {
-  padding-right: 20px;
+  padding-right: 24px;
   list-style: none;
 }
 .links:hover {
@@ -58,8 +65,9 @@ export default {
 }
 
 .logo {
-  font-size: 20px;
+  font-family: "Cherry Swash", cursive;
+  font-weight: 700;
+  font-size: 2rem;
   color: #8721d5;
-  font-weight: 900;
 }
 </style>

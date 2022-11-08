@@ -41,7 +41,11 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 40px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #8721d5;
+  z-index: 1;
+  background-color: white;
   font-family: "Cherry Swash", cursive;
   font-weight: 700;
 }

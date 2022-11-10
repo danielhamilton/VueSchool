@@ -43,8 +43,10 @@ export default {
 #nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: sticky;
+  align-items: center;
+  top: 0;
+  left: 0;
   z-index: 10;
   margin: -10px -10px;
   background-color: white;
@@ -52,6 +54,7 @@ export default {
   font-weight: 700;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
 #nav a {
   font-weight: bold;
   color: #2c3e50;

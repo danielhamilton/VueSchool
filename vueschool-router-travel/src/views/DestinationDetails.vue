@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="wrapper">
     <GoBack />
     <div class="hero">
       <div class="destination">
@@ -72,16 +72,19 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
 .heroImageContainer {
-  z-index: 2;
-  display: flex;
-  align-items: center;
 }
 
+.heroImageContainer > img {
+  /*border: 10px solid orange;*/
+  z-index: 1;
+  width: 100%;
+  position: relative;
+}
 .textOverlay {
   z-index: 9;
   display: flex;
@@ -90,13 +93,6 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgba(255, 255, 255, 0.7);
-}
-
-.heroImageContainer > img {
-  /*border: 10px solid orange;*/
-  width: 100%;
-  position: relative;
-  z-index: 1;
 }
 
 .destination-details {

@@ -89,10 +89,12 @@ export default {
   z-index: 9;
   display: flex;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 18rem;
+  color: rgba(255, 255, 255, 1);
+  /*text-shadow: 0px 8px 0px rgba(92, 32, 188, 0.9);*/
 }
 
 .destination-details {

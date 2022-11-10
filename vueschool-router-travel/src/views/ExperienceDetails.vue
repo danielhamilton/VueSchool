@@ -1,6 +1,5 @@
 <template>
   <section>
-    <h2>{{ experience.name }}</h2>
     <div class="experience-details">
       <img
         :src="require(`@/assets/${experience.image}`)"
@@ -48,14 +47,17 @@ img {
   border-radius: 8px;
 }
 .experience-details {
+  /*border: 5px dotted brown;*/
   display: flex;
   justify-content: space-between;
-  padding: 16px 16px;
+  padding: 24px 16px;
 }
 
 p {
+  /*border: 5px dotted darkgoldenrod;*/
   margin: 0 40px;
-  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.6rem;
   text-align: left;
 }
 </style>

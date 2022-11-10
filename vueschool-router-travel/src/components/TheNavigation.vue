@@ -45,12 +45,12 @@ export default {
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  top: 0;
-  border-bottom: 1px solid #8721d5;
-  z-index: 1;
+  z-index: 10;
+  margin: -10px -10px;
   background-color: white;
   font-family: "Cherry Swash", cursive;
   font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 #nav a {
   font-weight: bold;
@@ -64,7 +64,8 @@ export default {
   display: flex;
 }
 .links {
-  padding-right: 24px;
+  margin-right: 24px;
+  padding-right: 16px;
   list-style: none;
 }
 .links:hover {
@@ -74,7 +75,9 @@ export default {
 .logo {
   font-family: "Cherry Swash", cursive;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #8721d5;
+  padding-left: 2.5rem;
+  vertical-align: middle;
 }
 </style>

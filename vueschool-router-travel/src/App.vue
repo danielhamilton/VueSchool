@@ -29,8 +29,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 h1 {
@@ -40,8 +38,8 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-family: "Cherry Swash", cursive;
-  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
   text-align: center;
 }
 .slide-enter-active,

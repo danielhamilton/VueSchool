@@ -1,9 +1,19 @@
 <template>
-  <div>
+  <div class="container">
     <GoBack />
-    <h1>{{ destination.name }}</h1>
+    <div class="hero">
+      <div class="destination">
+        <h1 class="textOverlay">{{ destination.name }}</h1>
+      </div>
+      <div class="heroImageContainer">
+        <img
+          :class="heroImage"
+          :src="require(`@/assets/${destination.image}`)"
+        />
+      </div>
+    </div>
+
     <div class="destination-details">
-      <img :src="require(`@/assets/${destination.image}`)" />
       <p>{{ destination.description }}</p>
     </div>
     <section class="experiences">
@@ -62,52 +72,78 @@ export default {
 </script>
 
 <style scoped>
-img {
-  max-width: 600px;
-  height: auto;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.heroImageContainer {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.textOverlay {
+  z-index: 9;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.heroImageContainer > img {
+  /*border: 10px solid orange;*/
   width: 100%;
-  max-height: 400px;
+  position: relative;
+  z-index: 1;
 }
-.experiences {
-  border: 1px solid rgb(92, 32, 188);
-  padding: 16px 24px;
-  margin-top: 16px;
-}
+
 .destination-details {
+  /* border: 10px solid royalblue;*/
   display: flex;
   justify-content: space-between;
 }
 p {
+  /*border: 5px solid blue; */
   margin: 40px;
-  font-size: 1.25remx;
+  font-size: 1.25rem;
+  line-height: 2rem;
   text-align: left;
 }
 
+.experiences {
+  width: 100%;
+  border-top: 2px dotted rgba(92, 32, 188, 0.5);
+  padding: 16px 24px;
+  margin-top: 16px;
+}
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
   max-height: 400px;
   text-align: center;
+  margin: 36px 0px;
 }
-
 .cards img {
-  max-height: 200px;
+  max-height: 150px;
+  width: 250px;
   border-radius: 8px;
 }
 .card {
-  padding: 16px 16px;
+  /*border: 10px solid green;*/
+  padding: 8px 16px;
   position: relative;
 }
 .card__text {
+  /*border: 10px solid rgb(163, 20, 203);*/
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 34px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 36px;
   font-weight: 900;
   text-decoration: none;
 }
